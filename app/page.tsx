@@ -11,13 +11,11 @@ import css from "./assets/images/css.png";
 import bootstrap from "./assets/images/bootstrap.png";
 import firebase from "./assets/images/firebase.png";
 import postgres from "./assets/images/postgres.png";
-
+import rickandmorty from "./assets/images/rickandmorty.png";
+import ontap from "./assets/images/ontap.png";
 export default function Home() {
   return (
-    <main
-      style={{ fontFamily: "Menlo, Monaco, Courier New, monospace" }}
-      className="p-24"
-    >
+    <main className="p-24 font-mono">
       <section className="flex flex-wrap md:justify-between gap-10">
         <div className="text-4xl">
           <span style={{ color: "#4688CC" }}>const</span>
@@ -103,6 +101,54 @@ export default function Home() {
             height={50}
             alt=""
           />
+        </div>
+      </section>
+      <section>
+        <h5 className="text-3xl text-center py-6" style={{ color: "#4688CC" }}>
+          Projects
+        </h5>
+        <div className="flex justify-center flex-col md:flex-row gap-x-12 gap-y-6">
+          <div>
+            <h5 className="text-center" style={{ color: "#7DBADD" }}>
+              Rick and Morty
+            </h5>
+            <a
+              href="https://cindyztran.github.io/rick-and-morty/"
+              target="_blank"
+            >
+              <Image src={rickandmorty} width={300} alt="" />
+            </a>
+            <div className="text-center py-2">
+              <span>
+                <a
+                  href="https://github.com/cindyztran/rick-and-morty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <h5 className="text-center" style={{ color: "#7DBADD" }}>
+              On Tap
+            </h5>
+            <a href="https://on-tap.onrender.com" target="_blank">
+              <Image src={ontap} width={300} alt="" />
+            </a>
+            <div className="text-center py-2">
+              <span>
+                <a
+                  href="https://github.com/cindyztran/on-tap-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
