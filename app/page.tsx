@@ -1,43 +1,110 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import laptop from "./assets/images/laptop.png";
+import js from "./assets/images/js.png";
+import ts from "./assets/images/ts.png";
+import express from "./assets/images/express.png";
+import node from "./assets/images/node.jpeg";
+import react from "./assets/images/react.png";
+import html from "./assets/images/html.png";
+import css from "./assets/images/css.png";
+import bootstrap from "./assets/images/bootstrap.png";
+import firebase from "./assets/images/firebase.png";
+import postgres from "./assets/images/postgres.png";
+
 export default function Home() {
   return (
-    <main className="flex justify-between p-24">
-      <div
-        className="text-4xl"
-        style={{ fontFamily: "Menlo, Monaco, Courier New, monospace" }}
-      >
-        <span style={{ color: "#4688CC" }}>const</span>
-        <span className="px-2" style={{ color: "#42A7FE" }}>
-          cindyTran
-        </span>
-        =
-        <span className="ps-2" style={{ color: "#FFD00B" }}>
-          &#123;
-        </span>
-        <div className="ps-10">
-          <span style={{ color: "#7DBADD" }}>role:</span>
-          <span className="ps-2" style={{ color: "#C07D65" }}>
-            "Full Stack Developer"
+    <main
+      style={{ fontFamily: "Menlo, Monaco, Courier New, monospace" }}
+      className="p-24"
+    >
+      <section className="flex flex-wrap md:justify-between gap-10">
+        <div className="text-4xl">
+          <span style={{ color: "#4688CC" }}>const</span>
+          <span className="px-2" style={{ color: "#42A7FE" }}>
+            cindyTran
           </span>
-          ,
-        </div>
-        <div className="ps-10">
-          <span style={{ color: "#7DBADD" }}>location:</span>
-          <span className="ps-2" style={{ color: "#C07D65" }}>
-            "Seattle"
+          =
+          <span className="ps-2" style={{ color: "#FFD00B" }}>
+            &#123;
           </span>
-          ,
+          <div className="ps-10">
+            <span style={{ color: "#7DBADD" }}>role:</span>
+            <span className="ps-2" style={{ color: "#C07D65" }}>
+              "Full Stack Developer"
+            </span>
+            ,
+          </div>
+          <div className="ps-10">
+            <span style={{ color: "#7DBADD" }}>location:</span>
+            <span className="ps-2" style={{ color: "#C07D65" }}>
+              "Seattle"
+            </span>
+            ,
+          </div>
+          <span style={{ color: "#FFD00B" }}>&#125;</span>;
         </div>
-        <span style={{ color: "#FFD00B" }}>&#125;</span>;
-      </div>
-      <Image
-        src={laptop}
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      />
+        <Image src={laptop} width={500} height={500} alt="" />
+      </section>
+      <section className="text-center">
+        <h5 className="text-3xl py-6" style={{ color: "#4688CC" }}>
+          Technologies and Tools
+        </h5>
+        <div className="flex flex-wrap justify-between md:flex-row gap-2">
+          <Image className="rounded" src={js} width={50} height={50} alt="" />
+          <Image className="rounded" src={ts} width={50} height={50} alt="" />
+          <Image
+            className="rounded"
+            src={react}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image
+            className="rounded bg-white"
+            src={express}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image className="rounded" src={node} width={50} height={50} alt="" />
+          <Image
+            className="rounded bg-white"
+            src={html}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image
+            className="rounded bg-white"
+            src={css}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image
+            className="rounded"
+            src={bootstrap}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image
+            className="rounded"
+            src={firebase}
+            width={50}
+            height={50}
+            alt=""
+          />
+          <Image
+            className="rounded"
+            src={postgres}
+            width={50}
+            height={50}
+            alt=""
+          />
+        </div>
+      </section>
     </main>
   );
 }
