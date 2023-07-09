@@ -55,11 +55,7 @@ export default function Home() {
             style={{ color: "#7DBADD" }}
           ></i>
         </a>
-        <a
-          href="https://github.com/cindyztran"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="mailto:cindyztran@gmail.com">
           <i
             className="text-xl fa-regular fa-envelope px-2"
             style={{ color: "#7DBADD" }}
