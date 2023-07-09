@@ -13,6 +13,7 @@ import firebase from "./assets/images/firebase.png";
 import postgres from "./assets/images/postgres.png";
 import rickandmorty from "./assets/images/rickandmorty.png";
 import ontap from "./assets/images/ontap.png";
+
 export default function Home() {
   return (
     <main className="p-24 font-mono">
@@ -45,10 +46,51 @@ export default function Home() {
         <Image src={laptop} width={500} height={500} alt="" />
       </section>
       <section className="text-center">
-        <h5 className="text-3xl py-6" style={{ color: "#4688CC" }}>
+        <h5 className="text-3xl pt-10 pb-5" style={{ color: "#4688CC" }}>
+          Contact Me
+        </h5>
+        <a href="/CindyTran_Resume.pdf" download>
+          <i
+            className="text-xl fa-regular fa-download px-2"
+            style={{ color: "#7DBADD" }}
+          ></i>
+        </a>
+        <a
+          href="https://github.com/cindyztran"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            className="text-xl fa-regular fa-envelope px-2"
+            style={{ color: "#7DBADD" }}
+          ></i>
+        </a>
+        <a
+          href="https://github.com/cindyztran"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            className="text-xl fa-brands fa-square-github px-2"
+            style={{ color: "#7DBADD" }}
+          ></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/cindyztran/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            className="text-xl fa-brands fa-linkedin px-2"
+            style={{ color: "#7DBADD" }}
+          ></i>
+        </a>
+      </section>
+      <section className="text-center">
+        <h5 className="text-3xl pt-10 pb-5" style={{ color: "#4688CC" }}>
           Technologies and Tools
         </h5>
-        <div className="flex flex-wrap justify-between md:flex-row gap-2">
+        <div className="flex flex-wrap justify-center md:flex-row gap-2">
           <Image className="rounded" src={js} width={50} height={50} alt="" />
           <Image className="rounded" src={ts} width={50} height={50} alt="" />
           <Image
@@ -104,7 +146,10 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h5 className="text-3xl text-center py-6" style={{ color: "#4688CC" }}>
+        <h5
+          className="text-3xl text-center pt-10 pb-5"
+          style={{ color: "#4688CC" }}
+        >
           Projects
         </h5>
         <div className="flex justify-center flex-col md:flex-row gap-x-12 gap-y-6">
