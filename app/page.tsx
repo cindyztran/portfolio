@@ -13,6 +13,7 @@ import firebase from "./assets/images/firebase.png";
 import postgres from "./assets/images/postgres.png";
 import rickandmorty from "./assets/images/rickandmorty.png";
 import ontap from "./assets/images/ontap.png";
+import nike from "./assets/images/nike.png";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           <span className="px-2" style={{ color: "#42A7FE" }}>
             cindyTran
           </span>
-          =
+          <span className="text-white">=</span>
           <span className="ps-2" style={{ color: "#FFD00B" }}>
             &#123;
           </span>
@@ -41,7 +42,8 @@ export default function Home() {
             </span>
             ,
           </div>
-          <span style={{ color: "#FFD00B" }}>&#125;</span>;
+          <span style={{ color: "#FFD00B" }}>&#125;</span>
+          <span className="text-white">;</span>
         </div>
         <Image src={laptop} width={500} height={500} alt="" />
       </section>
@@ -151,9 +153,33 @@ export default function Home() {
         <div className="flex justify-center flex-col md:flex-row gap-x-12 gap-y-6">
           <div>
             <h5 className="text-center" style={{ color: "#7DBADD" }}>
+              Nike Scraper
+            </h5>
+            <a
+              href="https://github.com/cindyztran/nike-stock-scraper"
+              target="_blank"
+            >
+              <Image src={nike} width={300} alt="" />
+            </a>
+            <div className="text-center py-2">
+              <span>
+                <a
+                  className="text-white"
+                  href="https://github.com/cindyztran/nike-stock-scraper"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <h5 className="text-center" style={{ color: "#7DBADD" }}>
               Rick and Morty
             </h5>
             <a
+              className="text-white"
               href="https://cindyztran.github.io/rick-and-morty/"
               target="_blank"
             >
@@ -162,6 +188,7 @@ export default function Home() {
             <div className="text-center py-2">
               <span>
                 <a
+                  className="text-white"
                   href="https://github.com/cindyztran/rick-and-morty"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -181,6 +208,7 @@ export default function Home() {
             <div className="text-center py-2">
               <span>
                 <a
+                  className="text-white"
                   href="https://github.com/cindyztran/on-tap-frontend"
                   target="_blank"
                   rel="noopener noreferrer"
